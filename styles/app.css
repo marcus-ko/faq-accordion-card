@@ -1,0 +1,10 @@
+html, body {
+  max-width: 100%;
+}
+
+body {
+  background-color: #1babb6;
+  font-family: Kumbh Sans;
+  overflow-x: hidden;
+}
+
