@@ -1,0 +1,119 @@
+.accordion--container
+  .accordion--title
+    h1
+      position: absolute
+      top: 161px
+      right: 150px
+      padding-top: 2px
+      font-weight: 700
+  .accordion--panel
+    ul
+      position: absolute
+      top: 212px
+      left: 27px
+      list-style-type: none
+      li
+        border-bottom: 1px solid #ccc
+        .accordion--input
+          display: none
+        .accordion--input:checked ~ .accordion--heading > span.accordion--toggle-icon
+          transform: rotate(180deg)
+          transition: transform .5s
+        .accordion--input:checked ~ .accordion--content
+          display: block
+        .accordion--input:checked + .accordion--heading
+          color: #000
+          font-weight: 700
+        label
+          display: block
+          cursor: pointer
+          font-size: .8rem
+          padding: 1rem 0 1rem 0 
+          color: #808080
+          width: 280px
+          text-align: left
+          &:hover
+            color: #ECA00A
+        span.accordion--toggle-icon
+          content: ""
+          background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAuNzk5bDQgNCA0LTQiIHN0cm9rZT0iI0Y0N0I1NiIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)
+          background-size: contain
+          background-repeat: no-repeat
+          position: absolute
+          padding: 5px
+          right: -41px
+          transition: all .5s
+        .accordion--content
+          text-align: left
+          font-size: .7rem
+          color: #808080
+          padding: 0 0 1rem 0 
+          display: none
+          width: 280px
+  
+@media only screen and (min-width: 768px)
+  .accordion--container
+    padding: 1rem
+    overflow: hidden
+    max-width: 400px
+    .accordion--title
+      h1
+        position: absolute
+        top: 60px
+        right: 300px
+        padding-top: 2px
+        font-weight: 700
+    .accordion--panel
+      ul
+        position: absolute
+        top: 111px
+        left: 395px
+        list-style-type: none
+        li
+          border-bottom: 1px solid #ccc
+          .accordion--input
+            display: none
+          .accordion--input:checked ~ .accordion--heading > span.accordion--toggle-icon
+            transform: rotate(180deg)
+            transition: transform .5s
+          .accordion--input:checked ~ .accordion--content
+            display: block
+          .accordion--input:checked + .accordion--heading
+            color: #000
+            font-weight: 700
+          label
+            display: block
+            cursor: pointer
+            font-size: .8rem
+            padding: 1rem 0 1rem 0 
+            color: #808080
+            width: 280px
+            text-align: left
+            &:hover
+              color: #ECA00A
+          span.accordion--toggle-icon
+            content: ""
+            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAuNzk5bDQgNCA0LTQiIHN0cm9rZT0iI0Y0N0I1NiIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)
+            background-size: contain
+            background-repeat: no-repeat
+            position: absolute
+            padding: 5px
+            right: -41px
+            transition: all .5s
+          .accordion--content
+            text-align: left
+            font-size: .7rem
+            color: #808080
+            padding: 0 0 1rem 0 
+            display: none
+            width: 280px
+
+
+
+
+  
+
+
+
+  
+

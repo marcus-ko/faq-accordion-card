@@ -1,25 +1,61 @@
 .main--card
   position: relative
   margin: 0 auto
-  width: 760px
-  height: 422px
+  width: 375px
+  height: 500px
   border-radius: 20px
   background-color: #fff
+  top: 20px
 
 #bgPatternDesktop
   position: absolute
-  transform: scale(.7)
-  top: -343px
-  left: -477px
-  clip-path: inset(230px 0px 360px 470px);
+  transform: scale(.27)
+  top: -481px
+  left: -294px
+  // clip-path: inset(230px 0px 0px 470px);
 
 #mainCardImage
   position: relative
-  left: -240px
-  top: 30px
-  transform: scale(.85)
+  left: -48px
+  top: -193px
+  transform: scale(.55)
   /* top right bottom left */
-  clip-path: inset(0 0 0 70px)
+  // clip-path: inset(0 0 0 70px)
 
 #cardBoxImg
-  // z-index: 99
+  position: absolute
+  bottom: 0
+  left: 3px
+  top: -84px
+  transform: scale(.5)
+
+@media only screen and (min-width: 768px)
+  .main--card
+    position: relative
+    margin: 0 auto
+    width: 760px
+    height: 422px
+    border-radius: 20px
+    background-color: #fff
+
+  #bgPatternDesktop
+    position: absolute
+    transform: scale(.7,.8)
+    top: -307px
+    left: -494px
+    clip-path: inset(230px 0px 0px 470px)
+
+  #mainCardImage
+    position: relative
+    left: -240px
+    top: 30px
+    transform: scale(.85)
+    /* top right bottom left */
+    clip-path: inset(0 0 0 70px)
+
+  #cardBoxImg
+    position: absolute
+    bottom: 0
+    left: -90px
+    top: 158px
+    transform: scale(.9)
